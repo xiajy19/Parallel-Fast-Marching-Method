@@ -1,0 +1,18 @@
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c INPUT PARAMETERS
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+sources.dat            c: File containing source information
+itimes.out             c: File containing initial traveltimes
+receivers.dat          c: File containing receiver positions
+gridc.vtx              c: File containing velocity grid information
+6371.0                 c: Earth radius in km
+1                      c: Use first-order(0) or mixed-order(1) scheme
+1                      c: Limit traveltime field to receivers (0=no,1=yes)
+0.4     0.4            c: (lat,lon) cushion around receiver array (degrees)
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c OUTPUT FILES
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+1                      c: find source-receiver traveltimes (0=no,1=yes)
+rtravel.out            c: Name of file containing source-receiver traveltimes
+1                      c: Calculate partial (Frechet) derivatives (0=no,1=yes)
+frechet.out            c: Name of file containing Frechet derivatives

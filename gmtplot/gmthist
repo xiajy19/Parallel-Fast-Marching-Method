@@ -1,0 +1,7 @@
+#
+set bounds = "-R-1.0/1.0/0/350"
+set proj = "-JX5i/8i"
+set psfile = "gmthist.ps"
+#
+
+pshistogram histo.dat -Ba0.2f0.1:"Relative arrival time residual (s)":/a20f10:"Number of rays":WSne $bounds $proj -G200 -L0.5p -W0.02 -F -P >! $psfile

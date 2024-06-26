@@ -1,0 +1,29 @@
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c Input file names
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+../gridc.vtx                c: True model velocity vertices
+../gridi.vtx                c: Reference model velocity vertices
+ccccccccccccccccccccccccccccccccccccccccccccccc
+c Slice parameters
+ccccccccccccccccccccccccccccccccccccccccccccccc
+1                           c: Extract depth slice? (0=no, 1=yes)
+-140.0                      c: Depth of slice
+bounddp.gmt                 c: GMT plotting bounds for depth slice
+1                           c: Extract N-S slice? (0=no, 1=yes)
+147.0                       c: Longitude of slice
+boundns.gmt                 c: GMT plotting bounds for N-S slice
+1                           c: Extract E-W slice? (0=no, 1=yes)
+-34.7                       c: Latitude of slice
+boundew.gmt                 c: GMT plotting bounds for E-W slice
+ccccccccccccccccccccccccccccccccccccccccccccccc
+c Velocity grid parameters
+ccccccccccccccccccccccccccccccccccccccccccccccc
+1                           c: Plot depth slice? (0=no,1=yes)
+6   6                       c: Dicing in theta,phi
+grid2dvd.z                  c: GMT output file for depth slice
+1                           c: Plot N-S slice? (0=no,1=yes)
+6   6                       c: Dicing in r,theta
+grid2dvns.z                 c: GMT output file for N-S slice
+1                           c: Plot E-W slice? (0=no,1=yes)
+6   9                       c: Dicing in r,phi
+grid2dvew.z                 c: GMT output file for E-W slice
